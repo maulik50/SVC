@@ -4,27 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ceramic</title>
+    
+    <title>SVC Ceramic</title>
+
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+ 
 </head>
 <body>
-    <nav>
-        <label class="logo">SVC</label>
-        <ul>
-            <li><a href="active">Home</a></li>
-            <li><a href="#">Price List</a></li>
-            <li><a href="#">Catlog</a></li>
-            <li><a href="#">About Us</a></li>
-        </ul>
-        <label id="icon">
-            <i class="fas fa-bars"></i>
-        </label>
+  
+    <div class="navbar">
+
+        <img src="images/cut svc.png">
+
+        <div class="manu-right">
+
+            <span onclick="myFunction()"> &#9776; </span>
+
+            <ul id="menu">
+                <li>Home</li>
+                <li>Price List</li>
+                <li>Catlog</li>
+                <li>About Us</li>
+            </ul>
+            
+        </div>
         
-    </nav>
-    <section>
-        
-    </section>
+    </div>
     
+    <script>
+        function myFunction(){
+            var x = document.getElementById("menu");
+
+            if(x.style.display == "block")
+            {
+                x.style.display = "none";
+            }
+            else{
+                x.style.display = "block";
+            }
+        }
+    </script>
 </body>
 </html>
